@@ -506,13 +506,14 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Sensors
-PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@1.0-impl-xiaomi \
-    android.hardware.sensors@1.0-service
+TARGET_USES_XIAOMI_SENSOR_HAL_1_0 := true
+$(call inherit-product, vendor/hardware/xiaomi/hidl/sensors/sensors_product.mk)
 
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@2.0 \
+    android.hardware.sensors@2.1
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
