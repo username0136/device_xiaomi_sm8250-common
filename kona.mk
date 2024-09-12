@@ -455,7 +455,7 @@ PRODUCT_COPY_FILES += \
 # Preopt critical applications
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
-    SystemUI
+    SystemUI \
     GoogleDialer
 
 # QMI
