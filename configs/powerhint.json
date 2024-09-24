@@ -649,13 +649,13 @@
       "PowerHint": "GAME",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1958400"
     },
     {
       "PowerHint": "GAME",
       "Node": "CPUBigPlusClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2073600"
     },
     {
       "PowerHint": "GAME",
@@ -667,7 +667,7 @@
       "PowerHint": "GAME",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "650000000"
+      "Value": "670000000"
     }
   ]
 }
